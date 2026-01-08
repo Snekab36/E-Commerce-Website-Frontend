@@ -53,43 +53,6 @@ JWT Authentication
 
 bcryptjs
 
-📁 Project Structure
-E-COMMERCE/
-│
-├── ecommerce-frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── Home.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── Register.jsx
-│   │   │   ├── Cart.jsx
-│   │   │   ├── Checkout.jsx
-│   │   │   └── Orders.jsx
-│   │   ├── context/
-│   │   │   ├── AuthContext.jsx
-│   │   │   └── CartContext.jsx
-│   │   ├── components/
-│   │   └── App.jsx
-│   └── main.jsx
-│
-├── backend/
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Product.js
-│   │   └── Order.js
-│   ├── routes/
-│   │   ├── userRoutes.js
-│   │   ├── productRoutes.js
-│   │   ├── cartRoutes.js
-│   │   └── orderRoutes.js
-│   ├── middleware/
-│   │   ├── authMiddleware.js
-│   │   └── adminMiddleware.js
-│   ├── controllers/
-│   │   ├── productController.js
-│   │   └── orderController.js
-│   ├── server.js
-│   └── .env
 
 🔐 Authentication Flow
 
@@ -145,12 +108,12 @@ npm run dev
 
 Frontend runs on:
 
-http://localhost:5173
+https://e-commerce-website-frontend-one-vert.vercel.app/
 
 
 Backend runs on:
 
-http://localhost:5000
+https://e-commerce-website-backend-lilac.vercel.app/
 
 📸 Screenshots
 
