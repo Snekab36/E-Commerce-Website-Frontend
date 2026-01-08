@@ -17,7 +17,7 @@ export const CartProvider = ({ children }) => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/cart",
+        "https://e-commerce-website-backend-lilac.vercel.app/api/cart",
         {
           productId: product._id,
           title: product.name,
