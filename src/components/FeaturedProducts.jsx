@@ -6,7 +6,7 @@ export default function FeaturedProducts() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/products")
+    axios.get("https://e-commerce-website-backend-lilac.vercel.app/api/products")
       .then(res => setProducts(res.data.slice(0, 6)));
   }, []);
 
