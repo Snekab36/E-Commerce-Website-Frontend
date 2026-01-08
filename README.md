@@ -1,16 +1,197 @@
-# React + Vite
+🛒 SparkMart – MERN E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SparkMart is a full-stack E-commerce web application built using the MERN stack (MongoDB, Express, React, Node.js).
+It supports user authentication, product browsing, cart management, checkout, and order history.
 
-Currently, two official plugins are available:
+🚀 Features
+👤 User Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+User Registration & Login (JWT Authentication)
 
-## React Compiler
+Product Listing & Product Details
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Add to Cart / Remove from Cart
 
-## Expanding the ESLint configuration
+Checkout & Place Orders
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Order History (My Orders)
+
+Toast Notifications (Success & Error messages)
+
+🛠 Admin (Backend-ready)
+
+Create Products (Admin only)
+
+Secure API routes
+
+Order Management
+
+🧱 Tech Stack
+Frontend
+
+React + Vite
+
+Tailwind CSS
+
+Axios
+
+React Router
+
+React Hot Toast
+
+Backend
+
+Node.js
+
+Express.js
+
+MongoDB Atlas
+
+Mongoose
+
+JWT Authentication
+
+bcryptjs
+
+📁 Project Structure
+E-COMMERCE/
+│
+├── ecommerce-frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── Cart.jsx
+│   │   │   ├── Checkout.jsx
+│   │   │   └── Orders.jsx
+│   │   ├── context/
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── CartContext.jsx
+│   │   ├── components/
+│   │   └── App.jsx
+│   └── main.jsx
+│
+├── backend/
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Product.js
+│   │   └── Order.js
+│   ├── routes/
+│   │   ├── userRoutes.js
+│   │   ├── productRoutes.js
+│   │   ├── cartRoutes.js
+│   │   └── orderRoutes.js
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── adminMiddleware.js
+│   ├── controllers/
+│   │   ├── productController.js
+│   │   └── orderController.js
+│   ├── server.js
+│   └── .env
+
+🔐 Authentication Flow
+
+User registers with email & password
+
+Password is hashed using bcrypt
+
+JWT token is generated on login
+
+Token is stored in localStorage
+
+Protected routes use Authorization: Bearer <token>
+
+🧪 API Endpoints
+User
+POST   /api/users/register
+POST   /api/users/login
+
+Products
+GET    /api/products
+GET    /api/products/:id
+POST   /api/products   (Admin)
+
+Cart
+POST   /api/cart
+GET    /api/cart
+PUT    /api/cart/:productId
+DELETE /api/cart/:productId
+
+Orders
+POST   /api/orders
+GET    /api/orders/myorders
+
+⚙️ Environment Variables
+
+Create a .env file inside backend/:
+
+MONGO_URI=mongodb+srv://myusersneha:sneha123@cluster0.fdwkjtv.mongodb.net/ecommerce?appName=Cluster0
+JWT_SECRET=Saisneha@123
+PORT=5000
+
+▶️ How to Run the Project
+1️⃣ Backend
+cd backend
+npm install
+npm run dev
+
+2️⃣ Frontend
+cd ecommerce-frontend
+npm install
+npm run dev
+
+
+Frontend runs on:
+
+http://localhost:5173
+
+
+Backend runs on:
+
+http://localhost:5000
+
+📸 Screenshots
+
+Home Page with Banner
+
+Product Listing
+
+Login & Register Pages
+
+Cart Page
+
+Checkout Page
+
+🧠 Learning Outcomes
+
+Full MERN stack development
+
+JWT authentication & authorization
+
+REST API design
+
+MongoDB data modeling
+
+State management using Context API
+
+Error handling & debugging
+
+📌 Future Improvements
+
+Payment gateway integration (Stripe / Razorpay)
+
+Admin dashboard
+
+Product search & filters
+
+Wishlist feature
+
+Responsive mobile optimization
+
+👩‍💻 Author
+
+Sneha
+MERN Stack Developer
+E-commerce Project – Academic & Learning Purpose
