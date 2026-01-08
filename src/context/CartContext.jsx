@@ -42,7 +42,7 @@ export const CartProvider = ({ children }) => {
     const token = localStorage.getItem("token"); 
     try {
       const { data } = await axios.delete(
-        `http://localhost:5000/api/cart/${productId}`,
+        `https://e-commerce-website-backend-lilac.vercel.app/api/cart/${productId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
